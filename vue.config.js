@@ -6,6 +6,10 @@ function resolve(dir) {
   return path.join(__dirname, dir)
 }
 
+function isProd () {
+  return process.env.NODE_ENV === 'production'
+}
+
 const CONFIG = require("./config")
 
 const port = process.env.port || 9527
@@ -119,6 +123,21 @@ module.exports = {
       errors: true
     },
   },
+  css: {
+    loaderOptions: {
+      less: {
+        modifyVars: {
+          // less vars，customize ant design theme
+
+          // 'primary-color': '#F5222D',
+          // 'link-color': '#F5222D',
+          // 'border-radius-base': '4px'
+        },
+        // do not remove this line
+        javascriptEnabled: true
+      }
+    }
+  },
   // 全局样式
   pluginOptions: {
     'style-resources-loader': {
@@ -140,6 +159,16 @@ module.exports = {
     }
   },
   chainWebpack: config => {
+    
+    // @TODO 向html塞参数, 暂时失败了
+    // if (!isProd()) {
+    //   config
+    //     .plugin('html').tap(args => {
+    //       args[0].cdn = pages
+    //       return args
+    //     })
+    // }
+
     config
       .module
         .rule('vue')
@@ -149,6 +178,7 @@ module.exports = {
             options.compilerOptions.preserveWhitespace = true
             return options;
         });
+
 
 
     config
