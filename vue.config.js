@@ -132,7 +132,10 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@': resolve('src')
+        '@': resolve('src'),
+        // @fix runtime -> compiler模式
+        // https://blog.csdn.net/wxl1555/article/details/83187647
+        'vue$': 'vue/dist/vue.esm.js'
       }
     }
   },

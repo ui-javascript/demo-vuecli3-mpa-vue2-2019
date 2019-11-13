@@ -3,12 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "install:tyarn": "tyarn install",
     "install:cnpm": "cnpm install",
+    "remove": "rimraf node_modules",
     "serve": "vue-cli-service serve",
+    "dev": "npm run serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@vue/composition-api": "^0.3.2",
     "core-js": "^2.6.5",
     "echarts": "^4.4.0",
     "element-ui": "^2.12.0",

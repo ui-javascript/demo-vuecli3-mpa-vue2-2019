@@ -12,5 +12,8 @@ module.exports = {
   // ElementUI-组件测试
   // entry: './_element/*.js',
   // entry: './_element/**/*.js',
-  entry: './_element/table/*.js',
+  // entry: './_element/table/*.js',
+
+  // composition-api 尝鲜
+  entry: './_composition/basics/*.js',
 }
