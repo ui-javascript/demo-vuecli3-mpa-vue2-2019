@@ -7,7 +7,7 @@ module.exports = {
 
   // 路径写法示例
   // entry: './_demo/*.js',
-  // entry: './_demo/**/*.js',
+  entry: './_demo/**/*.js',
 
   // ElementUI-组件测试
   // entry: './_element/*.js',
@@ -15,7 +15,7 @@ module.exports = {
   // entry: './_element/table/*.js',
 
   // composition-api 尝鲜
-  entry: './_composition/basics/*.js',
+  // entry: './_composition/basics/*.js',
 
   // antd-vue 组件cesium
   // entry: './_antd/**/*.js',

@@ -6,6 +6,15 @@
 
 - dynamic-import-node
 
+```js
+module.exports = {
+  presets: ["@vue/app"],
+  plugins: [
+      ["dynamic-import-node"]
+  ]
+};
+```
+
 # TODO
 
 - svg

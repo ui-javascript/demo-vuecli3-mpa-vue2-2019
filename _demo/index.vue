@@ -2,7 +2,7 @@
   <div class="app">
 
     <router-view></router-view>
-    <p>首页</p>
+    <p class="hello">首页</p>
 
   </div>
 </template>

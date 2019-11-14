@@ -87,8 +87,8 @@ function getEntry(globPath) {
 
   });
 
-  // console.log('-------页面--------')
-  // console.log(browserPages)
+  console.log('-------页面--------')
+  console.log(browserPages)
 
   // console.log('-------入口--------')
   // console.log(JSON.stringify(entries).replace(/},/g, "},\n"))

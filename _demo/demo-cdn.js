@@ -1,4 +1,4 @@
-import App from './cdn.vue'
+import App from './demo-cdn.vue'
 
 new Vue({
   el: '#app',
