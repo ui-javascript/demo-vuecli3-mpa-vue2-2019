@@ -33,6 +33,8 @@ const App = {
   `,
   setup() {
     // reactive state
+    // @tip value被废弃了
+    // const count = value(0)
     const count = ref(0)
 
     // computed state

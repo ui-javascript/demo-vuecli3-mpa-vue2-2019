@@ -73,12 +73,6 @@ function getEntry(globPath) {
     let uuid = `${prefix}${moduleName}`
     browserPages.push(`http://localhost:${port}/${uuid}.html`)
 
-    // entries[moduleName] = [entry, { context }]
-    entries[uuid] = [entry, {
-      context
-    }]
-
-
     entries[uuid] = {
       // js入口
       entry,
@@ -159,7 +153,7 @@ module.exports = {
     }
   },
   chainWebpack: config => {
-    
+
     // @TODO 向html塞参数, 暂时失败了
     // if (!isProd()) {
     //   config

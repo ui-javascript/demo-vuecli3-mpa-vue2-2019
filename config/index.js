@@ -15,9 +15,9 @@ module.exports = {
   // entry: './_element/table/*.js',
 
   // composition-api 尝鲜
-  // entry: './_composition/basics/*.js',
+  entry: './_composition/basics/*.js',
 
   // antd-vue 组件cesium
-  entry: './_antd/**/*.js',
+  // entry: './_antd/**/*.js',
 
 }
