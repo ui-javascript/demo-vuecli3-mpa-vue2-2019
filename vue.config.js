@@ -10,6 +10,7 @@ function isProd () {
   return process.env.NODE_ENV === 'production'
 }
 
+let browserPages = []
 const CONFIG = require("./config")
 
 const port = process.env.port || 9527
@@ -21,7 +22,6 @@ function shouldReadAsEntry(moduleName) {
 
 function getEntry(globPath) {
   let entries = {}
-  let browserPages = []
 
   glob.sync(globPath).forEach(function (entry) {
 
@@ -82,12 +82,13 @@ function getEntry(globPath) {
       filename: `${uuid}.html`,
       // 文件名
       title: context.title,
+      chunks: ['chunk-vendors', 'chunk-common', uuid],
     }
 
   });
 
-  console.log('-------页面--------')
-  console.log(browserPages)
+  // console.log('-------页面--------')
+  // console.log(browserPages)
 
   // console.log('-------入口--------')
   // console.log(JSON.stringify(entries).replace(/},/g, "},\n"))
@@ -95,12 +96,20 @@ function getEntry(globPath) {
   return entries
 }
 
-
 let pages = getEntry(CONFIG.entry)
 
+// 给html添加参数, 用于生成多页面路径的导航
+if (!isProd()) {
+  for (let index in pages) {
+    Object.assign(pages[index], {
+      _browserPage: browserPages,
+    })
+  }
+}
+
+
 module.exports = {
-  // 多页面
-  pages,
+
   // 基本配置
   // 1) / 绝对路径
   // 2) ./ 相对路径
@@ -142,7 +151,10 @@ module.exports = {
       ]
     }
   },
+  // vue-cli 多页面
+  pages,
   configureWebpack: {
+    // plugins: [],
     resolve: {
       alias: {
         '@': resolve('src'),
@@ -154,15 +166,6 @@ module.exports = {
   },
   chainWebpack: config => {
 
-    // @TODO 向html塞参数, 暂时失败了
-    // if (!isProd()) {
-    //   config
-    //     .plugin('html').tap(args => {
-    //       args[0].cdn = pages
-    //       return args
-    //     })
-    // }
-
     config
       .module
         .rule('vue')
@@ -173,12 +176,22 @@ module.exports = {
             return options;
         });
 
-
-
     config
       .when(process.env.NODE_ENV === 'development',
         config => config.devtool('cheap-source-map')
       )
+
+    // @TODO 向html塞参数, 暂时失败了
+    // if (!isProd()) {
+    //   config
+    //     .plugin('html')
+    //     .tap(args => {
+    //       // console.log(args)
+    //       // args[0].cdn = pages
+    //       // args.template = pages
+    //       return args
+    //     })
+    // }
 
     // @FIXME 多页面拆分出问题 ??
     // config

@@ -2,14 +2,13 @@
 
 基于vue-cli3的pages简单配置一下
 
-# 使用
+# 优化措施
 
-...
+- dynamic-import-node
 
 # TODO
 
 - svg
-- 多页面路径导航
 - 简易admin骨架
 
 # FIXME
@@ -20,7 +19,7 @@
 
 ```
 配置babel-plugin-import按需加载后 --> 全局导入就会失败 
-暂时先还原babel.config.js的相关配置, 都全局导入
+还原babel.config.js的相关配置, 暂时全局导入
 
 希望全局导入和按需加载可以分页面支持...
 ```    

@@ -1,4 +1,4 @@
-import App from './table-cdn.vue'
+import App from './cdn.vue'
 
 new Vue({
   el: '#app',
