@@ -32,6 +32,6 @@ module.exports = {
 
   // 第三方组件
   // entry: './_tools/**/*.js',
-  // entry: './_table/**/*.js',
-  entry: './_validate/**/*.js',
+  entry: './_table/**/*.js',
+  // entry: './_validate/**/*.js',
 }
