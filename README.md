@@ -2,6 +2,10 @@
 
 基于vue-cli3的pages简单配置一下
 
+# 使用
+
+以(./_demo/**)为例
+
 # 优化措施
 
 - dynamic-import-node

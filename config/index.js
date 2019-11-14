@@ -11,7 +11,7 @@ module.exports = {
 
   // 路径写法示例
   // entry: './_demo/*.js',
-  // entry: './_demo/**/*.js',
+  entry: './_demo/**/*.js',
 
   // ElementUI-组件测试
   // entry: './_element/*.js',
@@ -22,12 +22,12 @@ module.exports = {
   // entry: './_composition/basics/*.js',
 
   // antd-vue 组件cesium
-  // entry: './_antd/**/*.js',
+  // entry: './_antd-vue/**/*.js',
 
   // 大屏幕
   // entry: './_screen/GitDataV/index.js',
 
   // Vue-技巧总结
-  entry: './_tricks/**/*.js',
+  // entry: './_tricks/**/*.js',
 
 }
