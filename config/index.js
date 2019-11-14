@@ -5,6 +5,10 @@ module.exports = {
   // 默认meta位置
   meta: "./template/template.json",
 
+  // 是否插入多页面导航
+  // showNav: false,
+  showNav: true,
+
   // 路径写法示例
   // entry: './_demo/*.js',
   entry: './_demo/**/*.js',
@@ -19,5 +23,8 @@ module.exports = {
 
   // antd-vue 组件cesium
   // entry: './_antd/**/*.js',
+
+  // 大屏幕
+  // entry: './_screen/GitDataV/index.js',
 
 }

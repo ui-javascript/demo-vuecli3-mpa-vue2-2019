@@ -99,7 +99,7 @@ function getEntry(globPath) {
 let pages = getEntry(CONFIG.entry)
 
 // 给html添加参数, 用于生成多页面路径的导航
-if (!isProd()) {
+if (!isProd() && CONFIG.showNav) {
   for (let index in pages) {
     Object.assign(pages[index], {
       _browserPage: browserPages,
