@@ -10788,6 +10788,11 @@ vary@~1.1.2:
   resolved "https://registry.npm.taobao.org/vary/download/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha1-IpnwLG3tMNSllhsLn3RSShj2NPw=
 
+vee-validate@^3.0.11:
+  version "3.0.11"
+  resolved "https://registry.npm.taobao.org/vee-validate/download/vee-validate-3.0.11.tgz#5ffe3d501893801529186642d20241cf632f1341"
+  integrity sha1-X/49UBiTgBUpGGZC0gJBz2MvE0E=
+
 vendors@^1.0.0:
   version "1.0.3"
   resolved "https://registry.npm.taobao.org/vendors/download/vendors-1.0.3.tgz#a6467781abd366217c050f8202e7e50cc9eef8c0"
@@ -10966,6 +10971,11 @@ vuex@^3.1.2:
   version "3.1.2"
   resolved "https://registry.npm.taobao.org/vuex/download/vuex-3.1.2.tgz#a2863f4005aa73f2587e55c3fadf3f01f69c7d4d"
   integrity sha1-ooY/QAWqc/JYflXD+t8/AfacfU0=
+
+vxe-table@^2.6.20:
+  version "2.6.20"
+  resolved "https://registry.npm.taobao.org/vxe-table/download/vxe-table-2.6.20.tgz#0b89c51be89934dc19045c2265972401a7ec58c2"
+  integrity sha1-C4nFG+iZNNwZBFwiZZckAafsWMI=
 
 w3c-hr-time@^1.0.1:
   version "1.0.1"
@@ -11324,6 +11334,11 @@ ws@^7.0.0:
   integrity sha1-Qi7ajAKktdundEumbuu9hLzvDsc=
   dependencies:
     async-limiter "^1.0.0"
+
+xe-utils@^2.2.12:
+  version "2.2.12"
+  resolved "https://registry.npm.taobao.org/xe-utils/download/xe-utils-2.2.12.tgz#285f747ccd3c15ca81aa32e9027632b9fab77049"
+  integrity sha1-KF90fM08FcqBqjLpAnYyufq3cEk=
 
 xml-name-validator@^3.0.0:
   version "3.0.0"

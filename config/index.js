@@ -5,13 +5,13 @@ module.exports = {
   // 默认meta位置
   meta: "./template/template.json",
 
-  // 是否插入多页面导航
+  // 是否在顶部插入多页面导航
   // showNav: false,
   showNav: true,
 
   // 路径写法示例
   // entry: './_demo/*.js',
-  // entry: './_demo/**/*.js',
+  entry: './_demo/**/*.js',
 
   // ElementUI-组件测试
   // entry: './_element/*.js',
@@ -32,6 +32,6 @@ module.exports = {
 
   // 第三方组件
   // entry: './_tools/**/*.js',
-  entry: './_table/**/*.js',
+  // entry: './_table/**/*.js',
   // entry: './_validate/**/*.js',
 }

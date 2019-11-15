@@ -4,6 +4,8 @@ import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/index.css'
 
+import moment from "moment"
+
 Vue.use(VXETable)
 
 const App = {
@@ -35,8 +37,7 @@ const App = {
           // 注意是字符串
           sex: '1',
           num6: 12,
-          // @FIXME 
-          date12: '2019/01/01',
+          date12: moment('2012/08/07').format("YYYY-MM-DD"),
         }
       ],
       sexList: [{
@@ -64,7 +65,7 @@ const App = {
     }
   },
   computed: {
- 
+
   },
   methods: {
     editActivedEvent({ row, column }, event) {
