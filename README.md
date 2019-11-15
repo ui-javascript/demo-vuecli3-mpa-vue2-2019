@@ -4,11 +4,11 @@
 
 # 使用
 
-以(./_demo/**)为例
+- nodejs: v12.13.0
 
 # 优化措施
 
-- dynamic-import-node
+- dynamic-import-node??
 
 ```js
 module.exports = {

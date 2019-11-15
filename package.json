@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "install:tyarn": "tyarn install",
-    "install:cnpm": "cnpm install",
     "remove": "rimraf node_modules",
     "serve": "vue-cli-service serve",
     "dev": "npm run serve",
