@@ -5,7 +5,7 @@ module.exports = {
   // 默认meta位置
   meta: "./template/template.json",
 
-  // 是否在顶部插入多页面导航
+  // 当页面超过1张时, 是否在顶部插入多页面导航
   // showNav: false,
   showNav: true,
 
@@ -15,7 +15,7 @@ module.exports = {
 
   // ElementUI-组件测试
   // entry: './_element/*.js',
-  entry: './_element/**/*.js',
+  // entry: './_element/**/*.js',
 
   // composition-api 尝鲜
   // entry: './_composition/*.js',
@@ -33,4 +33,7 @@ module.exports = {
   // entry: './_tools/**/*.js',
   // entry: './_table/**/*.js',
   // entry: './_validate/**/*.js',
+
+  // admin-template
+  entry: './_admin-linxin/index.js',
 }
