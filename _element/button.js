@@ -5,6 +5,11 @@ import Element from 'element-ui'
 import 'normalize.css/normalize.css'
 import 'element-ui/lib/theme-chalk/index.css'
 
+Vue.use(Element, {
+  size: 'medium'
+})
+
+
 const App = {
   template: `
 
@@ -27,9 +32,7 @@ const App = {
 
 Vue.config.productionTip = false
 
-Vue.use(Element, {
-  size: 'medium'
-})
+
 
 new Vue({
   el: '#app',
