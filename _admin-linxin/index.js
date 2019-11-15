@@ -1,13 +1,13 @@
 import Vue from 'vue';
 import App from './App.vue';
-import router from './router';
+import router from './routers';
 import ElementUI from 'element-ui';
 import VueI18n from 'vue-i18n';
-import { messages } from './components/i18n';
+import { messages } from './locales/i18n';
 import 'element-ui/lib/theme-chalk/index.css'; // 默认主题
 // import './assets/css/theme-green/index.css'; // 浅绿色主题
 import './styles/icon.css';
-import './components/directives';
+import './directives/directives';
 import 'babel-polyfill';
 
 Vue.config.productionTip = false;
