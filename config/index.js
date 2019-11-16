@@ -24,7 +24,7 @@ module.exports = {
   // entry: './_antd-vue/**/*.js',
 
   // 大屏幕
-  // entry: './_screen/GitDataV/index.js',
+  // entry: './_screen/GitDataV/table.js',
 
   // Vue-技巧总结
   // entry: './_tricks/**/*.js',
@@ -35,5 +35,8 @@ module.exports = {
   // entry: './_validate/**/*.js',
 
   // admin-template
-  entry: './_admin-linxin/index.js',
+  // entry: './_admin-linxin/index.js',
+
+  // veui-组件测试
+  entry: './_veui/*.js',
 }

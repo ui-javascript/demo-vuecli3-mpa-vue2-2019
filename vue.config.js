@@ -99,7 +99,8 @@ function getEntry(globPath) {
 let pages = getEntry(CONFIG.entry)
 
 // 给html添加参数, 用于生成多页面路径的导航
-if (!isProd() && pages.length > 1 && CONFIG.showNav) {
+// @fix 2019-11-16 pages是对象类型 不是数组 改为Object.keys().length
+if (!isProd() && Object.keys(pages).length > 1 && CONFIG.showNav) {
   for (let index in pages) {
     Object.assign(pages[index], {
       _browserPage: browserPages,
@@ -141,6 +142,12 @@ module.exports = {
       }
     }
   },
+  // veui-配置 ================
+  transpileDependencies: [
+    /[/\\]node_modules[/\\]veui[/\\]/,
+    /[/\\]node_modules[/\\]vue-awesome[/\\]/,
+    /[/\\]node_modules[/\\]resize-detector[/\\]/
+  ],
   // 全局样式
   pluginOptions: {
     'style-resources-loader': {
@@ -166,8 +173,7 @@ module.exports = {
   },
   chainWebpack: config => {
 
-    config
-      .module
+    config.module
         .rule('vue')
         .use('vue-loader')
         .loader('vue-loader')
@@ -176,6 +182,32 @@ module.exports = {
             return options;
         });
 
+    // veui配置 ==============
+    // VEUI 样式主题与组件代码分离, 配置如下
+    config.module
+        .rule('veui')
+        .test(/\.vue$/)
+        .pre()
+        .use('veui-loader')
+        .loader('veui-loader')
+        .tap(() => {
+          return {
+            modules: [
+              {
+                package: 'veui-theme-one',
+                fileName: '{module}.less'
+              },
+              {
+                package: 'veui-theme-one',
+                fileName: '{module}.js',
+                transform: false
+              }
+            ]
+          }
+        })
+
+
+    // 开发环境 cheap-source-map
     config
       .when(process.env.NODE_ENV === 'development',
         config => config.devtool('cheap-source-map')

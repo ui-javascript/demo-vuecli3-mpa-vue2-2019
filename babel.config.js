@@ -10,5 +10,9 @@ module.exports = {
       //     "import",
       //     { libraryName: "ant-design-vue", libraryDirectory: "es", style: true }
       // ]
+
+      // veui-配置 ===============
+      , ['veui']
+      , ['lodash']
   ]
 };
