@@ -14,7 +14,7 @@ module.exports = {
   // entry: './_demo/**/*.js',
 
   // composition-api 尝鲜
-  // entry: './_composition/*.js',
+  // entry: './_composition-api/*.js',
 
   // 大屏幕
   // entry: './_dashboard/GitDataV/table.js',
