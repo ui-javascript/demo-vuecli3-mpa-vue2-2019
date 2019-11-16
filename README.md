@@ -25,6 +25,7 @@ module.exports = {
 # TODO
 
 - 不同项目/页面 --> 处理各自静态资源路径/@alias別名
+- mock功能配置(目前仅vue-element-admin用到)
 - 将vue-element-admin在src下的代码解耦
 
 # FAQ

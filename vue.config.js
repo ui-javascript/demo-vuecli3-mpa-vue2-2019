@@ -15,7 +15,7 @@ const isEnvProd = (process.env.NODE_ENV === 'production')
 const isEnvDev = (process.env.NODE_ENV === 'development')
 
 const currentOutsidePath = CONFIG.entry.split('/')[1];
-console.log('---当前工程最外层路径---')
+console.log('------当前工程最外层目录------')
 console.log(currentOutsidePath)
 
 // 获取多页面信息
@@ -27,11 +27,10 @@ const entries = pages.entries
 if (!isEnvProd && Object.keys(entries).length > 1 && CONFIG.showNav) {
   for (let index in entries) {
     Object.assign(entries[index], {
-      _browserPage: entries.browserPages,
+      _browserPage: pages.browserPages,
     })
   }
 }
-
 
 
 module.exports = {
@@ -183,7 +182,7 @@ module.exports = {
     // vue-element-admin 的打包优化 ======
     // @FIXME 多页面拆分出问题 ??
     // config
-    //     .when(isEnvDev,
+    //     .when(!isEnvDev,
     //         config => {
     //           config
     //               .plugin('ScriptExtHtmlWebpackPlugin')

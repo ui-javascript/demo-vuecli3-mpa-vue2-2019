@@ -4,6 +4,7 @@
 
 - 特色技术栈
 
+    - iconfont
     - mavon-editor https://github.com/hinesboy/mavonEditor
     - vue-schart https://github.com/lin-xin/vue-schart
 
