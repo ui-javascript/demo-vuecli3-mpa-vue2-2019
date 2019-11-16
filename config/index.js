@@ -13,18 +13,11 @@ module.exports = {
   // entry: './_demo/*.js',
   // entry: './_demo/**/*.js',
 
-  // ElementUI-组件测试
-  // entry: './_element/*.js',
-  // entry: './_element/**/*.js',
-
   // composition-api 尝鲜
   // entry: './_composition/*.js',
 
-  // antd-vue 组件测试
-  // entry: './_antd-vue/**/*.js',
-
   // 大屏幕
-  // entry: './_screen/GitDataV/table.js',
+  // entry: './_dashboard/GitDataV/table.js',
 
   // Vue-技巧总结
   // entry: './_tricks/**/*.js',
@@ -35,12 +28,20 @@ module.exports = {
   // entry: './_validate/**/*.js',
 
   // admin-template
-  // entry: './_admin-linxin/index.js',
+  entry: './_admin-linxin/index.js',
+
+
+  // ElementUI-组件测试
+  // entry: './_element/*.js',
+  // entry: './_element/**/*.js',
+
+  // antd-vue 组件测试
+  // entry: './_antd-vue/**/*.js',
 
   // veui-组件测试
   // entry: './_veui/*.js',
 
   // iview-组件测试
   // entry: './_iview/*.js',
-  entry: './_iview/**/*.js',
+  // entry: './_iview/**/*.js',
 }

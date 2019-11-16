@@ -8,4 +8,4 @@
     - vue-schart https://github.com/lin-xin/vue-schart
 
 - 勉强IE9+, 部分功能IE10+
-- 打包后表格会漂移..., 好像被我搞坏了 --> 又突然好了... @ignore
+- 打包后表格会漂移..., 好像被我搞坏了 --> 貌似又突然好了... @ignore
