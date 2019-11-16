@@ -35,6 +35,7 @@
     "vee-validate": "^3.0.11",
     "veui-loader": "^1.0.0-alpha.33",
     "veui-theme-one": "^1.0.0-alpha.33",
+    "view-design": "^4.0.2",
     "viser-vue": "^2.4.6",
     "vue": "^2.6.10",
     "vue-clipboard2": "^0.2.1",

@@ -38,5 +38,9 @@ module.exports = {
   // entry: './_admin-linxin/index.js',
 
   // veui-组件测试
-  entry: './_veui/*.js',
+  // entry: './_veui/*.js',
+
+  // iview-组件测试
+  // entry: './_iview/*.js',
+  entry: './_iview/**/*.js',
 }
