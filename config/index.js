@@ -1,4 +1,7 @@
 module.exports = {
+  // 端口号
+  port: process.env.port || 9527,
+
   // 默认模板位置
   template: './template/template.html',
 
@@ -29,7 +32,8 @@ module.exports = {
 
   // admin-template
   // entry: './_admin-linxin/index.js',
-  entry: './_admin-iview/index.js',
+  // entry: './_admin-iview/index.js',
+  entry: './_admin-panjc/index.js',
 
 
   // ElementUI-组件测试

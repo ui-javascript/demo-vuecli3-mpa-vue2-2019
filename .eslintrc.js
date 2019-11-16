@@ -1,7 +1,9 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
+    browser: true,
+    es6: true,
   },
   extends: [
     'plugin:vue/essential'
@@ -9,6 +11,9 @@ module.exports = {
     // , '@vue/standard'
     // , '@vue/prettier'
   ],
+  // vue-element-admin的校验规则
+  // https://github.com/PanJiaChen/vue-element-admin/blob/master/.eslintrc.js
+  // extends: ['plugin:vue/recommended', 'eslint:recommended'],
   rules: {
     // allow async-await
     'generator-star-spacing': 'off',

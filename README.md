@@ -7,6 +7,7 @@
 # 使用
 
 - nodejs: v12.13.0
+- 目录结构参考: https://github.com/PanJiaChen/vue-element-admin
 
 # 优化措施
 
@@ -24,10 +25,9 @@ module.exports = {
 # TODO
 
 - 不同项目/页面 --> 处理各自静态资源路径/@alias別名
-- svg
-- 简易admin骨架
+- 将vue-element-admin在src下的代码解耦
 
-# FIXME
+# FAQ
 
 - 与template-cdn.html混用, 会导致打包内容有误 --> 默认视图不用cdn, 需要cdn时覆盖template-cdn.html
 - Antd is not defined 解决办法
@@ -40,7 +40,7 @@ module.exports = {
 希望全局导入和按需加载可以分页面支持...
 ```    
     
-- 多页面拆分失效 --> 打包页面空白
+- 多页面拆分失效 --> 打包页面空白??
 
 ```js
 // @FIXME 多页面拆分出问题 ??
@@ -60,7 +60,6 @@ module.exports = {
 //           elementUI: {
 //             name: 'chunk-elementUI', // split elementUI into a single package
 //             priority: 20, // the weight needs to be larger than libs and app or it will be packaged into libs or app
-order-manage
 //           },
 //           commons: {
 //             name: 'chunk-commons',
