@@ -118,6 +118,7 @@ module.exports = {
   outputDir: 'dist',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV === 'development',
+  // 设为false打包时不生成.map文件
   productionSourceMap: false,
   devServer: {
     port: port,

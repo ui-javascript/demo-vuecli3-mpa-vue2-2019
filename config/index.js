@@ -28,7 +28,8 @@ module.exports = {
   // entry: './_validate/**/*.js',
 
   // admin-template
-  entry: './_admin-linxin/index.js',
+  // entry: './_admin-linxin/index.js',
+  entry: './_admin-iview/index.js',
 
 
   // ElementUI-组件测试

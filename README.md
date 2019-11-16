@@ -21,7 +21,7 @@ module.exports = {
 
 # TODO
 
-- 不同项目/页面的静态资源路径处理
+- 不同项目/页面 --> 处理各自静态资源路径/@alias別名
 - svg
 - 简易admin骨架
 
