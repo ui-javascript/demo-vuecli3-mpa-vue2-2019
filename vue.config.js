@@ -15,7 +15,7 @@ const isEnvProd = (process.env.NODE_ENV === 'production')
 const isEnvDev = (process.env.NODE_ENV === 'development')
 
 const currentOutsidePath = CONFIG.entry.split('/')[1];
-console.log('------当前工程最外层目录------')
+console.log('-------当前工程最外层目录-------')
 console.log(currentOutsidePath)
 
 // 获取多页面信息

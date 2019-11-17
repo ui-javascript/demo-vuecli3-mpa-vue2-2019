@@ -6,11 +6,15 @@ import role from './role'
 import article from './article'
 import search from './remote-search'
 
+// vue-admin-template需要的mock-api =======
+import table from './table'
+
 const mocks = [
   ...user,
   ...role,
   ...article,
-  ...search
+  ...search,
+  ...table
 ]
 
 // for front mock

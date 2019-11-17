@@ -20,7 +20,7 @@ module.exports = {
   // entry: './_composition-api/*.js',
 
   // 大屏幕
-  // entry: './_dashboard/GitDataV/table.js',
+  entry: './_dashboard/GitDataV/index.js',
 
   // Vue-技巧总结
   // entry: './_tricks/**/*.js',
@@ -29,7 +29,7 @@ module.exports = {
   // entry: './_animation/**/*.js',
 
   // 第三方组件
-  entry: './_tools/**/*.js',
+  // entry: './_tools/**/*.js',
   // entry: './_list-tree-table/**/*.js',
   // entry: './_validate/**/*.js',
 
@@ -37,6 +37,7 @@ module.exports = {
   // entry: './_admin-linxin/index.js',
   // entry: './_admin-iview/index.js',
   // entry: './_admin-panjc/index.js',
+  entry: './_admin-mini/index.js',
 
 
   // ElementUI-组件测试
