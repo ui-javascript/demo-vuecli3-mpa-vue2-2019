@@ -25,15 +25,18 @@ module.exports = {
   // Vue-技巧总结
   // entry: './_tricks/**/*.js',
 
+  // 动画测试
+  // entry: './_animation/**/*.js',
+
   // 第三方组件
-  // entry: './_tools/**/*.js',
-  // entry: './_table/**/*.js',
+  entry: './_tools/**/*.js',
+  // entry: './_list-tree-table/**/*.js',
   // entry: './_validate/**/*.js',
 
   // admin-template
   // entry: './_admin-linxin/index.js',
   // entry: './_admin-iview/index.js',
-  entry: './_admin-panjc/index.js',
+  // entry: './_admin-panjc/index.js',
 
 
   // ElementUI-组件测试

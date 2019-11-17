@@ -28,6 +28,14 @@ module.exports = {
 - mock功能配置(目前仅vue-element-admin用到)
 - 将vue-element-admin在src下的代码解耦
 
+```
+使用^/router 
+使用^/api 
+使用^/store 
+使用^/settings
+的代码部分 
+```
+
 # FAQ
 
 - 与template-cdn.html混用, 会导致打包内容有误 --> 默认视图不用cdn, 需要cdn时覆盖template-cdn.html
