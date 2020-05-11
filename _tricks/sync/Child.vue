@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button @click="click"></button>
+        <button @click="click">button</button>
     </div>
 </template>
 
@@ -8,7 +8,7 @@
     export default {
         methods: {
             click() {
-                $emit('page', 12)
+                this.$emit('update:page', 12)
             }
         }
     }

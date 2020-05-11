@@ -23,10 +23,11 @@ module.exports = {
   // entry: './_dashboard/GitDataV/index.js',
 
   // 地图
-  entry: './_map/**/*.js',
+  // entry: './_map/**/*.js',
 
   // Vue-技巧总结
   // entry: './_tricks/**/*.js',
+  // entry: './_tricks/sync/*.js',
 
   // 动画测试
   // entry: './_animation/**/*.js',
@@ -45,7 +46,8 @@ module.exports = {
 
 
   // ElementUI-组件测试
-  // entry: './_element/*.js',
+  entry: './_element/*.js',
+  // entry: './_element/table/*.js',
   // entry: './_element/**/*.js',
 
   // antd-vue 组件测试
