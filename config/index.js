@@ -13,8 +13,9 @@ module.exports = {
   showNav: true,
 
   // 路径写法示例
-  // entry: './_demo/*.js',
-  // entry: './_demo/**/*.js',
+  // entry: './__demo/*.js',
+  // entry: './__demo/**/*.js',
+  // entry: './__demo/cdn/*.js',
 
   // composition-api 尝鲜
   // entry: './_composition-api/*.js',
@@ -46,7 +47,7 @@ module.exports = {
 
 
   // ElementUI-组件测试
-  entry: './_element/*.js',
+  // entry: './_element/*.js',
   // entry: './_element/table/*.js',
   // entry: './_element/**/*.js',
 
@@ -59,4 +60,7 @@ module.exports = {
   // iview-组件测试
   // entry: './_iview/*.js',
   // entry: './_iview/**/*.js',
+
+  // 简单css测试
+  entry: './_css/**/*.js',
 }

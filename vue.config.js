@@ -1,7 +1,7 @@
 const path = require("path")
 
 // 构建工具类
-const utils = require("./build/utils")
+const utils = require("./utils")
 
 // 配置
 const CONFIG = require("./config")

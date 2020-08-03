@@ -3,7 +3,7 @@ const path = require("path")
 const fs = require("fs")
 
 // 配置信息
-const CONFIG = require("../config")
+const CONFIG = require("./config")
 
 function shouldReadAsEntry(moduleName) {
     // 小写字母开头的js作为入口文件
@@ -37,6 +37,7 @@ function getEntry (globPath) {
 
         let template = `./${sections.join('/')}/${moduleName}.html`
         if (!fs.existsSync(template)) {
+            console.log(`不存在${template}`)
             template = CONFIG.template
         }
 
