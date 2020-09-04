@@ -62,5 +62,6 @@ module.exports = {
   // entry: './_iview/**/*.js',
 
   // 简单css测试
-  entry: './_css/**/*.js',
+  // entry: './_css/**/*.js',
+  entry: './_basics/**/*.js',
 }
