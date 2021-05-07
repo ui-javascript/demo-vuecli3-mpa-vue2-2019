@@ -66,7 +66,7 @@
     "sortablejs": "^1.10.1",
     "tree-table-vue": "^1.1.0",
     "tui-editor": "^1.4.8",
-    "ua-parser-js": "^0.7.20",
+    "ua-parser-js": "^0.7.24",
     "v-charts": "^1.19.0",
     "v-contextmenu": "^2.8.1",
     "v-distpicker": "^1.2.2",
