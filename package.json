@@ -48,7 +48,7 @@
     "iview-area": "1.5.17",
     "js-cookie": "^2.2.1",
     "jsonlint": "^1.6.3",
-    "jszip": "^3.2.2",
+    "jszip": "^3.7.0",
     "lodash": "^4.17.15",
     "lowdb": "^1.0.0",
     "marked": "^0.7.0",
